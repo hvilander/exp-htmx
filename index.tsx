@@ -35,4 +35,29 @@ app.get('/people', async (c: Context) => {
   );
 });
 
+app.post('/people', async (c: Context) => {
+  let body: FormData;
+  let created;
+  try{
+    body = await c.req.formData();
+    const fname = body.get('fname');
+    const lname = body.get('lname');
+    created = await sql`
+      INSERT INTO people (fname, lname) values (${fname}, ${lname});
+    `;
+  } catch (error) {
+    console.error(error);
+  }
+
+  c.res = new Response('success', {
+    status: 200,
+    headers: {
+      'X-message': 'success',
+    },
+  });
+
+  console.log(created)
+  return c.res;
+})
+
 export default app;
