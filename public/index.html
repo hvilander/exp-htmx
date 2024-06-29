@@ -5,9 +5,10 @@
     <script src="https://unpkg.com/htmx.org@2.0.0" ></script>
   </head>
   <body>
-    <button hx-get="/version" hx-target="#version">
+    <button hx-get="/verDOHsion" hx-target="#version">
       Get Bun Version
     </button>
+    <div hx-get="/people" hx-trigger="load">Loading...</div>
     <div id="version"></div>
   </body>
 </html>

@@ -13,3 +13,5 @@ bun: https://bun.sh
 hono:
 
 
+https://bun.sh/guides/ecosystem/neon-serverless-postgres
+adding neon postgres ^^
