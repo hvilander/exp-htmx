@@ -5,3 +5,11 @@ https://github.com/mvolkmann/talks/blob/master/htmx.key.pdf
 
 
 Playing around with it
+
+
+
+tech: 
+bun: https://bun.sh
+hono:
+
+
