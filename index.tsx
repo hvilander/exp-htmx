@@ -2,6 +2,7 @@ import {type Context, Hono} from 'hono';
 import { serveStatic } from 'hono/bun';
 import { neon } from "@neondatabase/serverless";
 
+
 console.log("Bun server starting...");
 const app = new Hono();
 

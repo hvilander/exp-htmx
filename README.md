@@ -15,3 +15,8 @@ hono:
 
 https://bun.sh/guides/ecosystem/neon-serverless-postgres
 adding neon postgres ^^
+
+
+
+TODO:
+- play with htmx websockets
